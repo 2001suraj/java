@@ -1,0 +1,113 @@
+Normal
+
+Example 1 	( program to  Print  your name)
+ 	public class Name {
+ 		public static void main (String [] args){
+ 		System.out.println("Suraj karki");
+ 		}
+ 	}
+ 	
+ Example 2 	(program to declare two variable a,b and print the sum, sub, product, div)
+ 	public class Operators{
+ 		public static void main (String [] args){
+ 		 double a,b, sum, sub, mul, div;
+ 		 a = 12.2;
+ 		 b = 12.2;
+ 		 sum = a+b;
+ 		 div = a/b;
+ 		 sub = a-b;
+ 		 mul = a*b;
+ 		 System.out.println (" The sum is : "  + sum "\n  The sub is =  " + 			sub + "\n  The mul is  :  " + mul + "\n The div is : " + div) ;
+ 		}
+ 	}
+
+Using scanner 
+
+Example 3   ( area  of rectangle using scanner)
+
+import java.util.Scanner;
+public class Ss {
+    public static void main(String[] args){
+
+        double length, breadth, area;
+        Scanner sc  = new Scanner(System.in);
+        System.out.println("Enter the lenght");
+        length = sc.nextDouble();
+        System.out.println("Enter the breadth");
+        breadth = sc.nextDouble();
+        area = length * breadth;
+        System.out.println( " the  area is : "+  area); 
+    }
+}
+
+Example 3 ( program to print name, age, income and section)
+import java.util.Scanner;
+public class Ss {
+    public static void main(String[] args){
+
+       String name;
+       int age;
+       double net_income;
+       char section;
+
+       Scanner sc =  new Scanner(System.in);
+
+       System.out.println("Enter your name ");
+       name = sc.nextLine();
+
+       System.out.println("Enter your age ");
+       age = sc.nextInt();
+
+       System.out.println("Enter your name ");
+       net_income = sc.nextDouble();
+
+       System.out.println("Enter your name ");
+       section = sc.next().charAt(0);
+
+       System.out.println(" your name is : " + name +"\n your age is : " + 
+       + age + "\nyour net income is " + net_income + "\nyour section is : " + 	+ section );
+    }
+}
+
+Math library
+Example 4 (Area of triangle)
+	import java.lang.Math;	
+	import java.util.Scanner;
+	public class Area{
+	public static void main (String[] args){
+	double s,a,d,c,area,final_area;
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the side")
+	s = sc.next();
+	
+	System.out.println("Enter the side 1")
+	a = sc.next();
+	
+	System.out.println("Enter the side  2")
+	b = sc.next();
+	
+	
+	System.out.println("Enter the side 3")
+	c = sc.next();
+	
+	area = s * (s-a)*(s-b)*(s-c);
+	final_area = Math.pow(area,0.5);
+	
+	System.out.println(final_area);	
+	}
+	}
+	
+/*
+	logical operator{
+		main(){
+			boolen value_1 = True;
+			boolen value_2 = false;
+			 if (value_1  || value_2){
+			 system.out.println(" ");
+			 }
+	 	}
+	}
+	
+*/
+
+
